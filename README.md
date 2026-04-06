@@ -15,10 +15,10 @@ This project demonstrates how to create an Amazon S3 bucket and upload files usi
 5. Verified uploaded objects
 
 ## 💻 Commands Used
-aws configure
-aws s3 mb s3://your-bucket-name
-aws s3 cp test.txt s3://your-bucket-name
-aws s3 ls
+1. aws configure
+2. aws s3 mb s3://your-bucket-name
+3. aws s3 cp test.txt s3://your-bucket-name
+4. aws s3 ls
 
 ## 🎥 Video Demo
 https://youtu.be/CGaQ7fJOj_c
