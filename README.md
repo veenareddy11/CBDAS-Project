@@ -1,33 +1,24 @@
+# AWS S3 Bucket using AWS CLI
 
+## 📌 Project Description
+This project demonstrates how to create an Amazon S3 bucket and upload files using AWS CLI from a local machine.
 
-# CBDAS-Project: AWS S3 Management via CLI
+## 🛠 Tools Used
+- AWS CLI
+- Amazon S3
 
-This project demonstrates how to manage Amazon S3 resources using the AWS Command Line Interface (CLI), specifically focusing on bucket creation and object manipulation from a local environment.
+## 🚀 Steps Performed
+1. Installed AWS CLI
+2. Configured AWS CLI using access keys
+3. Created an S3 bucket
+4. Uploaded files to the bucket
+5. Verified uploaded objects
 
----
+## 💻 Commands Used
+aws configure
+aws s3 mb s3://your-bucket-name
+aws s3 cp test.txt s3://your-bucket-name
+aws s3 ls
 
-## 📋 Prerequisites
-
-1.  **AWS CLI Installed:** [Download here](https://aws.amazon.com/cli/).
-2.  **IAM Credentials:** An AWS user with `AmazonS3FullAccess`.
-3.  **Local Setup:** Configure your terminal by running:
-    ```bash
-    aws configure
-    ```
-    *Provide your Access Key, Secret Key, and preferred Region (e.g., `us-east-1`).*
-
----
-
-## 🚀 Step-by-Step Operations
-
-### 1. Create a Globally Unique Bucket
-Replace `your-unique-bucket-name` with a name that hasn't been taken by anyone else in the world.
-
-```bash
-aws s3 mb s3://your-unique-bucket-name
-```
-
-###2. Upload a Local File to S3To upload a specific file (e.g., data.txt) to the root of your bucket:Bashaws s3 cp data.txt s3://your-unique-bucket-name/
-###3. Sync a Local FolderTo upload multiple files and keep your bucket synchronized with a local directory:Bashaws s3 sync ./my-local-folder s3://your-unique-bucket-name/uploads/
-##4. Verify UploadsList all files currently residing in your S3 bucket:Bashaws s3 ls s3://your-unique-bucket-name/ --recursive
-🛠️ Command Cheat SheetTaskCommandMake Bucketaws s3 mb s3://[bucket-name]Upload Fileaws s3 cp [file] s3://[bucket-name]Download Fileaws s3 cp s3://[bucket-name]/[file] .List Contentsaws s3 ls s3://[bucket-name]Remove Fileaws s3 rm s3://[bucket-name]/[file]Delete Bucketaws s3 rb s3://[bucket-name] --force
+## 🎥 Video Demo
+https://youtu.be/CGaQ7fJOj_c
